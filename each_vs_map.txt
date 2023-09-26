@@ -1,0 +1,29 @@
+Each vs Map
+
+In Ruby, both map and each are methods used with enumerable objects (e.g., arrays and hashes) to perform operations on their elements. However, they serve different purposes and have distinct behaviors:
+
+each Method:
+
+Purpose: The each method is used for iterating over each element of an enumerable object and executing a block of code for each element.
+Return Value: It returns the original enumerable object itself and does not create a new one.
+Example:
+
+numbers = [1, 2, 3, 4, 5]
+numbers.each { |n| puts n }
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+
+map Method:
+
+Purpose: The map method is used for transforming each element of an enumerable object by applying a block of code to each element, and it creates a new array containing the transformed values.
+Return Value: It returns a new array with the transformed elements, leaving the original array unchanged.
+Example:
+
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = numbers.map { |n| n * 2 }
+# doubled_numbers will be [2, 4, 6, 8, 10]
